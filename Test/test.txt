@@ -1,1 +1,3 @@
-Very cool
+class foo
+	int name
+end

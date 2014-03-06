@@ -77,13 +77,16 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core.h" />
     <ClInclude Include="MetaHub.h" />
+    <ClInclude Include="Meta_Class.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Parser.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Core.cpp" />
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -93,6 +96,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="MetaHub.cpp" />
+    <ClCompile Include="Meta_Class.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Parser.cpp" />
     <ClCompile Include="stdafx.cpp">
