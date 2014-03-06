@@ -10,13 +10,10 @@
 #define METAHUB_API __declspec(dllimport)
 #endif
 
-// This class is exported from the MetaHub.dll
-class METAHUB_API CMetaHub {
-public:
-	CMetaHub(void);
-	// TODO: add your methods here.
-};
+#include <string>
 
-extern METAHUB_API int nMetaHub;
+namespace MetaHub {
 
-METAHUB_API int fnMetaHub(void);
+	METAHUB_API int parse(std::string str);
+
+}
